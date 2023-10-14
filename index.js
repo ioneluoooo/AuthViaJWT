@@ -10,7 +10,7 @@ app.use('/auth', authRouter) // listening to the router
 
 const start = async () => {
     try {
-        await mongoose.connect(`mongodb+srv://qwerty:qwerty123@cluster0.uygy905.mongodb.net/auth_roles?retryWrites=true&w=majority`)
+        await mongoose.connect(`mongodb+srv://qwerty:<YOUR_PASSWORD>@cluster0.uygy905.mongodb.net/<PROJECT_NAME>?retryWrites=true&w=majority`)
         // connected to the mongodb cluster 
         app.listen(PORT, () => console.log(`server started at ${PORT}`))
         
